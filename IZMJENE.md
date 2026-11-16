@@ -41,3 +41,5 @@
 - Uklonjeno dinamičko zamućenje (`backdrop-filter`) s desktop intra, uz zadržan suptilan proziran okvir.
 - Animacija naziva i završni prijelaz ostaju, uz kraće trajanje otkrivanja naziva.
 - Mobilni intro, uključujući njegov izgled i animaciju, nije mijenjan.
+
+- U introu je potpuno uklonjen blur efekt, a pozadinska fotografija je dodatno prigušena jačim overlayem.
