@@ -29,3 +29,126 @@
 @media(max-width:700px){body{font-size:15px}.container{width:calc(100% - 40px)}.section{padding:78px 0}.kicker{font-size:.62rem;margin-bottom:21px}h2{font-size:clamp(2.8rem,11vw,4.2rem)}.hero{height:100svh;min-height:680px}.hero-image{object-position:53% center}.hero-shade{background:linear-gradient(0deg,rgba(13,26,21,.78),rgba(13,26,21,.35) 70%,rgba(13,26,21,.24))}.hero-content{margin-top:60px;padding-bottom:40px}.hero h1{font-size:clamp(3.9rem,14vw,6.9rem);max-width:620px}.hero-content>p{font-size:.93rem;line-height:1.75;margin-top:23px}.hero-eyebrow{font-size:.57rem;letter-spacing:.14em;gap:9px;margin-bottom:25px}.eyebrow-line{width:18px}.hero-actions{margin-top:26px;gap:20px}.hero .btn{min-height:52px}.hero .text-link{font-size:.67rem;gap:15px}.hero-bottom{left:20px;right:20px;bottom:18px}.hero-bottom>span:first-child,.hero-bottom>span:last-child{display:none}.scroll-cue{margin-left:auto;font-size:.5rem}.scroll-line{height:25px}.highlights-grid{grid-template-columns:1fr 1fr;padding:17px 0}.highlight{min-height:75px;padding:10px!important;border-right:0}.highlight:nth-child(odd){border-right:1px solid #ffffff25}.highlight-num{font-size:1.8rem}.intro-grid,.editorial-grid,.region-grid,.map-grid,.booking-grid,.faq-grid,.amen-list-grid{grid-template-columns:1fr;gap:45px}.intro-visual{padding:10px 0 35px 25px}.framed-image.tall{aspect-ratio:4/4.6}.image-stamp{width:116px;height:116px}.image-stamp b{font-size:1.5rem}.pool-feature{min-height:610px}.pool-text{padding:80px 0}.pool-overlay{background:linear-gradient(0deg,#142a24cf,#142a247e)}.section-heading.split{display:block}.section-heading .text-link{margin-top:20px}.amen-grid{grid-template-columns:1fr;gap:12px;margin-top:28px}.amen-item{padding:12px 0}.amen-num{font-size:2.3rem}.rule{margin:12px 0}.gallery-feature-grid{grid-template-columns:1fr 1fr;grid-template-rows:260px 220px;gap:10px}.feature-one{grid-column:1/3;grid-row:1}.feature-two{grid-column:1;grid-row:2}.feature-three{grid-column:2;grid-row:2}.gallery-feature span{font-size:.51rem;left:12px;bottom:12px}.section-heading.center{margin-bottom:36px}.reviews-grid{gap:10px}.rating-card{min-height:225px;padding:20px 12px}.rating-source{font-size:.55rem}.rating-score{font-size:3.5rem}.rating-score span{font-size:1rem}.rating-stars{font-size:.75rem}.region-side{min-height:320px}.region-topo{min-height:320px}.subhero{height:65svh;min-height:490px}.subhero-content{padding-bottom:65px}.subhero h1{font-size:clamp(3.6rem,12.4vw,6.2rem)}.subhero-content p{font-size:.95rem;line-height:1.65}.subhero-count{font-size:.48rem;bottom:12px}.editorial-grid h2{font-size:3.3rem}.villa-banner{padding:80px 0}.photo-triptych{grid-template-columns:1fr 1fr;gap:8px}.photo-triptych img{height:260px}.photo-triptych img:nth-child(2){height:260px}.photo-triptych img:last-child{display:none}.rooms-grid{grid-template-columns:1fr;gap:32px}.room-card:nth-child(even){margin-top:0}.room-image{height:auto;aspect-ratio:5/4}.room-body{padding:16px 0 10px}.room-body h2{font-size:2.8rem}.amen-list{grid-template-columns:1fr 1fr;gap:12px}.amen-list li{font-size:.77rem}.filterbar{gap:4px 16px}.filter-btn{font-size:.72rem}.gallery-masonry{columns:2;column-gap:10px}.gallery-tile{margin-bottom:10px}.gallery-tile img{min-height:130px}.tile-plus{opacity:1;width:30px;height:30px;right:8px;bottom:8px}.lightbox{padding:20px 45px}.lightbox img{max-width:calc(100vw - 90px);max-height:calc(100svh - 105px)}.lightbox button{width:34px;height:38px}.lightbox-prev{left:5px}.lightbox-next{right:5px}.lightbox-close{right:10px;top:10px}.places-grid{grid-template-columns:1fr}.place-card{min-height:150px;padding:22px;grid-template-columns:38px 1fr 15px}.place-card h2{font-size:2.3rem}.map-placeholder{height:290px}.booking-form-card{padding:25px 20px}.form-grid{grid-template-columns:1fr;gap:0}.booking-info h2{font-size:3.7rem}.platform-row{flex-wrap:wrap;gap:16px}.platform-row>span{width:100%}.contact-cards{grid-template-columns:1fr;gap:12px}.contact-card{min-height:165px;padding:24px}.contact-card strong{font-size:2rem}.faq-list details{padding:18px 0}.booking-cta{padding:75px 0}.booking-cta-grid{display:block}.booking-cta .btn{margin-top:32px}.footer{padding:60px 0 22px}.footer-top{grid-template-columns:1fr 1fr;gap:35px;padding-bottom:50px}.footer-brand{grid-column:span 2}.footer-top>div:last-child{grid-column:auto}.footer-bottom{display:grid;gap:12px}.floating-actions{bottom:16px;right:15px}.floating-actions a{width:48px;height:48px}.cookie-banner{bottom:10px;left:10px;right:10px;max-width:none;padding:17px;display:none;flex-wrap:wrap;gap:12px}.cookie-banner.is-visible{display:flex}.cookie-actions{width:100%}.cookie-actions button{flex:1}.legal-top{padding:155px 0 55px}.legal-top h1{font-size:clamp(3.3rem,11vw,6rem)}}
 @media(max-width:385px){.brand>span{font-size:15px}.brand svg{width:32px}.nav-shell{gap:9px;padding:0 12px}.nav-actions{gap:5px}.hero h1{font-size:3.8rem}.hero-actions{display:flex;flex-direction:column;align-items:start}.highlights .highlight{gap:7px}.footer-top{gap:20px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}.intro{display:none!important}}
+
+/* Medium29 — refined responsive floating navigation (2026-11-16)
+   Keep desktop untouched; ensure brand, locale and menu each have reserved space. */
+@media (max-width: 980px) {
+  .nav-shell {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto auto;
+    align-items: center;
+    column-gap: 10px;
+    width: calc(100% - 32px);
+    height: 68px;
+    margin: 12px auto 0;
+    padding: 0 12px 0 16px;
+    border-radius: 16px;
+    box-shadow: 0 12px 34px rgba(10, 24, 17, .18);
+  }
+  .site-header.scrolled .nav-shell {margin-top: 8px}
+  .page-home .site-header:not(.scrolled) .nav-shell,
+  .page-villa .site-header:not(.scrolled) .nav-shell,
+  .page-gallery .site-header:not(.scrolled) .nav-shell,
+  .page-amenities .site-header:not(.scrolled) .nav-shell,
+  .page-location .site-header:not(.scrolled) .nav-shell,
+  .page-booking .site-header:not(.scrolled) .nav-shell,
+  .page-contact .site-header:not(.scrolled) .nav-shell {
+    background: rgba(26, 44, 34, .88);
+    border-color: rgba(255, 255, 255, .15);
+    -webkit-backdrop-filter: blur(18px);
+    backdrop-filter: blur(18px);
+  }
+  .brand {min-width: 0; gap: 8px; overflow: hidden}
+  .brand svg {width: 32px; height: 32px; flex: 0 0 32px}
+  .brand > span {min-width: 0; font-size: 16px; letter-spacing: .045em; white-space: nowrap}
+  .brand small {font-size: 7px; letter-spacing: .20em; margin-top: 5px}
+  .nav-actions {grid-column: 2; margin-left: 0; gap: 0; justify-self: end}
+  .lang-current {
+    min-width: 48px;
+    min-height: 40px;
+    justify-content: center;
+    gap: 6px;
+    padding: 0 8px;
+    border: 1px solid rgba(255, 255, 255, .22);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .08);
+    font-size: 11px;
+  }
+  .lang-current svg {width: 10px; height: 7px}
+  .lang-menu {
+    top: calc(100% + 11px);
+    right: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    z-index: 110;
+  }
+  .mobile-toggle {
+    grid-column: 3;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border: 1px solid rgba(255, 255, 255, .22);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .08);
+    justify-self: end;
+  }
+  .mobile-toggle span {width: 21px; height: 2px; flex: 0 0 2px; border-radius: 3px}
+  .nav-links {
+    position: absolute;
+    top: calc(100% + 9px);
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 15px 17px 20px;
+    border-radius: 16px;
+    background: #f8f8f3;
+    color: #263a2d;
+    border: 1px solid rgba(34, 56, 42, .1);
+    box-shadow: 0 20px 45px rgba(12, 26, 19, .22);
+    max-height: calc(100dvh - 106px);
+    overflow: auto;
+    gap: 2px;
+    z-index: 108;
+  }
+  .nav-link {font-size: .78rem; letter-spacing: .07em; padding: 12px 10px; border-radius: 8px}
+  .nav-link.is-current {background: #ebeee7; color: #263a2d; font-weight: 800}
+  .nav-mobile-tail {margin-top: 11px}
+  .nav-mobile-tail .btn {justify-content: space-between; min-height: 52px}
+  .site-header.scrolled .lang-current,
+  .site-header.scrolled .mobile-toggle,
+  .page-privacy .lang-current,
+  .page-privacy .mobile-toggle,
+  .page-cookies .lang-current,
+  .page-cookies .mobile-toggle,
+  .page-terms .lang-current,
+  .page-terms .mobile-toggle {
+    background: rgba(38, 58, 45, .045);
+    border-color: rgba(38, 58, 45, .15);
+  }
+}
+@media (max-width: 480px) {
+  .nav-shell {width: calc(100% - 24px); height: 64px; margin-top: 10px; padding: 0 11px 0 13px; column-gap: 8px; border-radius: 15px}
+  .brand {gap: 7px}
+  .brand svg {width: 30px; height: 30px; flex-basis: 30px}
+  .brand > span {font-size: 14px; letter-spacing: .035em}
+  .brand small {font-size: 6.5px; letter-spacing: .15em; margin-top: 5px}
+  .lang-current {min-width: 43px; min-height: 39px; padding: 0 6px; gap: 5px}
+  .mobile-toggle {width: 39px; height: 39px}
+  .nav-links {max-height: calc(100dvh - 93px)}
+}
+@media (max-width: 355px) {
+  .nav-shell {padding: 0 9px; column-gap: 6px}
+  .brand {gap: 6px}
+  .brand svg {width: 26px; height: 26px; flex-basis: 26px}
+  .brand > span {font-size: 12.5px; letter-spacing: .015em}
+  .brand small {font-size: 6px; letter-spacing: .1em}
+  .lang-current {min-width: 37px; padding: 0 5px; gap: 4px; font-size: 10px}
+  .mobile-toggle {width: 37px; height: 39px}
+}

@@ -20,7 +20,8 @@
  // Language control.
  const langs=qs('.lang-switch'),langButton=qs('.lang-current');
  langButton?.addEventListener('click',()=>{const opening=!langs.classList.contains('is-open');langs.classList.toggle('is-open',opening);langButton.setAttribute('aria-expanded',String(opening));});
- doc.addEventListener('click',e=>{if(langs&&!langs.contains(e.target)){langs.classList.remove('is-open');langButton?.setAttribute('aria-expanded','false');}if(e.target===menu)closeMenu();});
+ doc.addEventListener('click',e=>{if(langs&&!langs.contains(e.target)){langs.classList.remove('is-open');langButton?.setAttribute('aria-expanded','false');}if(body.classList.contains('menu-open')&&header&&!header.contains(e.target))closeMenu();if(e.target===menu)closeMenu();});
+ addEventListener('resize',()=>{if(innerWidth>980)closeMenu();},{passive:true});
  doc.addEventListener('keydown',e=>{if(e.key==='Escape'){closeMenu();langs?.classList.remove('is-open');}});
  // Intro only once per browser tab session.
  const intro=qs('#intro');if(intro){let seen=false;try{seen=sessionStorage.getItem('vb-intro-seen')==='1';sessionStorage.setItem('vb-intro-seen','1');}catch{}
