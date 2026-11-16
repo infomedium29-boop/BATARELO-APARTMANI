@@ -334,6 +334,136 @@ LANGS['de'].update({
  'lightbox_close':'Foto schließen','lightbox_prev':'Vorheriges Foto','lightbox_next':'Nächstes Foto'
 })
 
+# Medium29 — second copy-edit pass: clear, natural language without generic tourism copy.
+# These values deliberately override the old legacy copy and the first revision above.
+NATURAL_COPY = {
+ 'hr': {
+  'explore':'Pogledajte vilu',
+  'scroll_hint':'Sadržaji i fotografije',
+  'footer_explore':'Stranice',
+  'learn':'Više informacija',
+  'reviews_action':'Pogledajte recenzije',
+  'villa_action':'Detalji o vili',
+  'location_action':'Što posjetiti u okolici',
+  'home_sub':'U Lučanima, blizu Sinja, na raspolaganju su vam cijela vila, privatni bazen i terasa.',
+  'home_intro_title':'Smještaj u Villi Batarelo',
+  'home_intro_text':'Vila ima tri spavaće sobe, dnevni boravak i opremljenu kuhinju. U dvorištu se nalaze privatni bazen, natkrivena terasa i roštilj.',
+  'photo_pool_p':'Uz bazen je prostor za odmor, a na natkrivenoj terasi možete objedovati i koristiti roštilj. Cijeli vanjski prostor namijenjen je gostima vile.',
+  'main_amen_t':'Smještaj i oprema',
+  'amen_short':['Tri spavaće sobe s posteljinom i ručnicima.','Klimatiziran dnevni prostor i opremljena kuhinja.','Privatni bazen, terasa, roštilj i dvorište.'],
+  'gallery_t':'Fotografije smještaja',
+  'location_p':'Iz vile možete posjetiti Sinj i Muzej Sinjske alke, istražiti krajolik uz Cetinu ili organizirati izlet u Split i Omiš.',
+  'review_info':'Najnovije ocjene i komentare gostiju možete pogledati na Bookingu i Airbnbu.',
+  'villa_title':'O vili Batarelo',
+  'villa_p1':'Villa Batarelo nalazi se u Lučanima, nedaleko od Sinja. U kući su tri spavaće sobe, dnevni boravak i kuhinja. Vila se iznajmljuje kao cjelina, bez dijeljenja prostora s drugim gostima.',
+  'villa_p2':'U dvorištu su privatni bazen, terasa i roštilj. Za pitanja o dolasku i boravku možete se obratiti domaćinu Davoru.',
+  'amenities_lead':'Pogledajte prostorije vile, opremu i sadržaje koji su gostima na raspolaganju.',
+  'amen_cards':[
+   ('Spavaće sobe','Tri spavaće sobe. Posteljina i ručnici su osigurani.','bedroom'),
+   ('Dnevni boravak','Prostor s televizorom i klimatizacijom.','inside'),
+   ('Kuhinja i blagovaonica','Kuhinja s perilicom posuđa, mikrovalnom pećnicom i priborom za pripremu jela.','inside'),
+   ('Privatni bazen','Vanjski bazen koji koriste samo gosti vile.','pool'),
+   ('Terasa i roštilj','Natkriveni prostor za objedovanje i roštilj.','outside'),
+   ('Vrt i okućnica','Dvorište i vrt za boravak na otvorenom.','exterior')
+  ],
+  'location_lead':'Pogledajte nekoliko prijedloga za izlet tijekom boravka u Lučanima.',
+  'map_note':'Lučane 33c, 21230 Sinj. Klikom na kartu otvorit ćete lokaciju u Google Kartama.',
+  'booking_lead':'Unesite datume boravka i kontakt. Upit možete poslati WhatsAppom ili e-mailom, a Davor će vam javiti je li termin slobodan i koja je cijena.',
+  'form_title':'Podaci za upit',
+  'booking_info_title':'Telefon i e-mail',
+  'contact_lead':'Za informacije o slobodnim terminima i cijeni javite se Davoru telefonom, WhatsAppom ili e-mailom.',
+  'legal_intros':{
+   'privacy':'Kako koristimo podatke koje nam pošaljete pri upitu za smještaj.',
+   'cookies':'Koje se postavke spremaju u vaš preglednik i kako ih možete promijeniti.',
+   'terms':'Informacije o upitima, rezervacijama i pravilima boravka.'
+  }
+ },
+ 'en': {
+  'explore':'View the villa',
+  'scroll_hint':'Rooms and photos',
+  'footer_explore':'Pages',
+  'learn':'More information',
+  'reviews_action':'Read guest reviews',
+  'villa_action':'About the villa',
+  'location_action':'Places to visit nearby',
+  'home_sub':'In Lučane near Sinj, you will have the entire villa, private pool and terrace to yourselves.',
+  'home_intro_title':'Your stay at Villa Batarelo',
+  'home_intro_text':'The villa has three bedrooms, a living room and an equipped kitchen. Outside, you will find a private pool, a covered terrace and a barbecue.',
+  'photo_pool_p':'Relax by the pool or have a meal on the covered terrace, where you can also use the barbecue. The entire outdoor area is reserved for villa guests.',
+  'main_amen_t':'Rooms and amenities',
+  'amen_short':['Three bedrooms with bed linen and towels.','Air-conditioned living area and equipped kitchen.','Private pool, terrace, barbecue and garden.'],
+  'gallery_t':'Photos of the villa',
+  'location_p':'Visit Sinj and the Sinjska Alka Museum, spend time around the Cetina River or plan a day trip to Split or Omiš.',
+  'review_info':'For the latest ratings and guest comments, visit our Booking.com and Airbnb listings.',
+  'villa_title':'About Villa Batarelo',
+  'villa_p1':'Villa Batarelo is in Lučane, a short distance from Sinj. The house has three bedrooms, a living room and a kitchen. It is rented as one property, with no shared spaces.',
+  'villa_p2':'Outside there is a private pool, terrace and barbecue. If you have any questions about your arrival or stay, you can contact your host, Davor.',
+  'amenities_lead':'See the rooms, equipment and facilities available during your stay.',
+  'amen_cards':[
+   ('Bedrooms','Three bedrooms. Bed linen and towels are provided.','bedroom'),
+   ('Living room','Living area with a TV and air conditioning.','inside'),
+   ('Kitchen and dining','Kitchen with dishwasher, microwave and cooking utensils.','inside'),
+   ('Private pool','Outdoor pool used only by villa guests.','pool'),
+   ('Terrace and barbecue','Covered area for outdoor meals and a barbecue.','outside'),
+   ('Garden','Private garden and outdoor space around the house.','exterior')
+  ],
+  'location_lead':'A few places to visit while staying in Lučane.',
+  'map_note':'Lučane 33c, 21230 Sinj, Croatia. Click the map to open the location in Google Maps.',
+  'booking_lead':'Enter your dates and contact details. Send an enquiry by WhatsApp or email and Davor will let you know whether the dates are available and what they cost.',
+  'form_title':'Enquiry details',
+  'booking_info_title':'Phone and email',
+  'contact_lead':'For available dates and prices, contact Davor by phone, WhatsApp or email.',
+  'legal_intros':{
+   'privacy':'How we use the details you send when enquiring about a stay.',
+   'cookies':'What this website stores in your browser and how you can change your settings.',
+   'terms':'Information about enquiries, reservations and house rules.'
+  }
+ },
+ 'de': {
+  'explore':'Villa ansehen',
+  'scroll_hint':'Zimmer und Fotos',
+  'footer_explore':'Seiten',
+  'learn':'Weitere Informationen',
+  'reviews_action':'Bewertungen ansehen',
+  'villa_action':'Mehr zur Villa',
+  'location_action':'Ausflugsziele in der Umgebung',
+  'home_sub':'In Lučane bei Sinj stehen Ihnen die gesamte Villa, der private Pool und die Terrasse zur Verfügung.',
+  'home_intro_title':'Ihr Aufenthalt in der Villa Batarelo',
+  'home_intro_text':'Die Villa verfügt über drei Schlafzimmer, ein Wohnzimmer und eine ausgestattete Küche. Im Außenbereich befinden sich ein privater Pool, eine überdachte Terrasse und ein Grill.',
+  'photo_pool_p':'Entspannen Sie am Pool oder essen Sie auf der überdachten Terrasse, wo auch ein Grill zur Verfügung steht. Der gesamte Außenbereich ist ausschließlich für die Gäste der Villa vorgesehen.',
+  'main_amen_t':'Räume und Ausstattung',
+  'amen_short':['Drei Schlafzimmer mit Bettwäsche und Handtüchern.','Klimatisierter Wohnbereich und ausgestattete Küche.','Privater Pool, Terrasse, Grill und Garten.'],
+  'gallery_t':'Fotos der Unterkunft',
+  'location_p':'Besuchen Sie Sinj und das Museum der Sinjska Alka, erkunden Sie die Gegend an der Cetina oder planen Sie einen Tagesausflug nach Split oder Omiš.',
+  'review_info':'Aktuelle Bewertungen und Kommentare finden Sie auf Booking.com und Airbnb.',
+  'villa_title':'Über die Villa Batarelo',
+  'villa_p1':'Die Villa Batarelo liegt in Lučane, nicht weit von Sinj entfernt. Das Haus hat drei Schlafzimmer, ein Wohnzimmer und eine Küche. Es wird als Ganzes vermietet; Sie teilen die Räume nicht mit anderen Gästen.',
+  'villa_p2':'Im Außenbereich gibt es einen privaten Pool, eine Terrasse und einen Grill. Bei Fragen zu Anreise oder Aufenthalt können Sie sich an Ihren Gastgeber Davor wenden.',
+  'amenities_lead':'Hier finden Sie Informationen zu den Zimmern, zur Ausstattung und zu den Angeboten für Gäste.',
+  'amen_cards':[
+   ('Schlafzimmer','Drei Schlafzimmer. Bettwäsche und Handtücher sind vorhanden.','bedroom'),
+   ('Wohnbereich','Wohnzimmer mit Fernseher und Klimaanlage.','inside'),
+   ('Küche und Essbereich','Küche mit Geschirrspüler, Mikrowelle und Kochutensilien.','inside'),
+   ('Privater Pool','Außenpool ausschließlich für Gäste der Villa.','pool'),
+   ('Terrasse und Grill','Überdachter Essbereich im Freien mit Grill.','outside'),
+   ('Garten','Privater Garten und Außenbereich rund um das Haus.','exterior')
+  ],
+  'location_lead':'Einige Ausflugstipps für Ihren Aufenthalt in Lučane.',
+  'map_note':'Lučane 33c, 21230 Sinj, Kroatien. Klicken Sie auf die Karte, um den Standort in Google Maps zu öffnen.',
+  'booking_lead':'Geben Sie Ihre Reisedaten und Kontaktdaten ein. Senden Sie die Anfrage über WhatsApp oder E-Mail. Davor teilt Ihnen mit, ob der Zeitraum verfügbar ist und welcher Preis gilt.',
+  'form_title':'Angaben für Ihre Anfrage',
+  'booking_info_title':'Telefon und E-Mail',
+  'contact_lead':'Bei Fragen zu freien Terminen und Preisen erreichen Sie Davor telefonisch, über WhatsApp oder per E-Mail.',
+  'legal_intros':{
+   'privacy':'Wie wir die Angaben verwenden, die Sie uns mit Ihrer Anfrage übermitteln.',
+   'cookies':'Welche Einstellungen die Website im Browser speichert und wie Sie diese ändern können.',
+   'terms':'Informationen zu Anfragen, Reservierungen und Hausregeln.'
+  }
+ }
+}
+for _lang, _updates in NATURAL_COPY.items():
+    LANGS[_lang].update(_updates)
+
 PAGES=['home','villa','amenities','gallery','location','booking','contact','privacy','cookies','terms']
 PICALT={
 'hr':{'exterior':'Pogled na Villu Batarelo i privatni bazen u Lučanima','pool':'Privatni bazen Ville Batarelo','outside':'Natkrivena terasa Ville Batarelo','inside':'Interijer i dnevni prostor Ville Batarelo','bedroom':'Spavaća soba Ville Batarelo','bathroom':'Kupaonica Ville Batarelo'},
@@ -371,13 +501,13 @@ TEMPLATE=r'''<!doctype html>
 {% if page=='home' %}
 <section class="hero hero-home"><img class="hero-image" src="{{photos[0].src}}" data-fallback="{{photos[0].fallback}}" alt="{{alt.exterior}}" fetchpriority="high" decoding="async"><div class="hero-shade"></div><div class="container hero-content"><div class="hero-eyebrow">{{t.eyebrow}}</div><h1>{{t.home_title|safe}}</h1><p>{{t.home_sub}}</p><div class="hero-actions"><a href="/{{lang}}/booking/" class="btn btn-light">{{t.check}}</a><a href="/{{lang}}/villa/" class="text-link light">{{t.explore}}</a></div></div><div class="hero-bottom"><span>{{t.eyebrow}}</span><div class="scroll-cue">{{t.scroll_hint}}</div><span>Lučane · Sinj</span></div></section>
 <div class="highlights"><div class="container highlights-grid">{% for stat in t.stats %}<div class="highlight"><span>{{stat}}</span></div>{% endfor %}</div></div>
-<section class="section reviews-section"><div class="container"><div class="section-heading center"><span class="kicker">{{t.reviews_k}}</span><h2>{{t.reviews_t|safe}}</h2></div><div class="reviews-grid"><a href="{{booking_url}}" class="rating-card" target="_blank" rel="noopener noreferrer"><span class="rating-source">BOOKING.COM</span><div class="rating-score">10<span>/10</span></div><span class="rating-stars">★★★★★</span><span class="rating-link">{{t.learn}}</span></a><a href="{{airbnb_url}}" class="rating-card" target="_blank" rel="noopener noreferrer"><span class="rating-source">AIRBNB</span><div class="rating-score">4,96<span>/5</span></div><span class="rating-stars">★★★★★</span><span class="rating-link">{{t.learn}}</span></a></div><p class="reviews-note">{{t.review_info}}</p></div></section>
-<section class="section section-intro"><div class="container intro-grid"><div class="intro-copy"><span class="kicker">{{t.home_intro_k}}</span><h2>{{t.home_intro_title|safe}}</h2><p class="lead">{{t.home_intro_text}}</p><a class="text-link" href="/{{lang}}/villa/">{{t.learn}}</a></div><div class="intro-visual"><figure class="framed-image tall"><img loading="lazy" src="{{photos[2].src}}" alt="{{alt.bedroom}}"></figure></div></div></section>
+<section class="section reviews-section"><div class="container"><div class="section-heading center"><span class="kicker">{{t.reviews_k}}</span><h2>{{t.reviews_t|safe}}</h2></div><div class="reviews-grid"><a href="{{booking_url}}" class="rating-card" target="_blank" rel="noopener noreferrer"><span class="rating-source">BOOKING.COM</span><div class="rating-score">10<span>/10</span></div><span class="rating-stars">★★★★★</span><span class="rating-link">{{t.reviews_action}}</span></a><a href="{{airbnb_url}}" class="rating-card" target="_blank" rel="noopener noreferrer"><span class="rating-source">AIRBNB</span><div class="rating-score">4,96<span>/5</span></div><span class="rating-stars">★★★★★</span><span class="rating-link">{{t.reviews_action}}</span></a></div><p class="reviews-note">{{t.review_info}}</p></div></section>
+<section class="section section-intro"><div class="container intro-grid"><div class="intro-copy"><span class="kicker">{{t.home_intro_k}}</span><h2>{{t.home_intro_title|safe}}</h2><p class="lead">{{t.home_intro_text}}</p><a class="text-link" href="/{{lang}}/villa/">{{t.villa_action}}</a></div><div class="intro-visual"><figure class="framed-image tall"><img loading="lazy" src="{{photos[2].src}}" alt="{{alt.bedroom}}"></figure></div></div></section>
 <section class="pool-feature"><img loading="lazy" src="{{photos[3].src}}" alt="{{alt.pool}}" class="pool-bg"><div class="pool-overlay"></div><div class="container pool-inner"><div class="pool-text"><span class="kicker kicker-light">{{t.photo_pool_k}}</span><h2>{{t.photo_pool_t|safe}}</h2><p>{{t.photo_pool_p}}</p><a href="/{{lang}}/amenities/" class="btn btn-outline-light">{{t.view_details}}</a></div></div></section>
 <section class="section section-amen"><div class="container"><div class="section-heading split"><div><span class="kicker">{{t.main_amen_k}}</span><h2>{{t.main_amen_t|safe}}</h2></div><a class="text-link" href="/{{lang}}/amenities/">{{t.view_details}}</a></div><div class="amen-grid">{% for a in t.amen_short %}<article class="amen-item"><p>{{a}}</p></article>{% endfor %}</div></div></section>
 <section class="section gallery-preview"><div class="container"><div class="section-heading center"><span class="kicker">{{t.gallery_k}}</span><h2>{{t.gallery_t|safe}}</h2></div><div class="gallery-feature-grid"><a href="/{{lang}}/gallery/" class="gallery-feature feature-one"><img loading="lazy" src="{{photos[0].src}}" alt="{{alt.exterior}}"><span>{{t.filters.exterior}}</span></a><a href="/{{lang}}/gallery/" class="gallery-feature feature-two"><img loading="lazy" src="{{photos[1].src}}" alt="{{alt.outside}}"><span>{{t.filters.outside}}</span></a><a href="/{{lang}}/gallery/" class="gallery-feature feature-three"><img loading="lazy" src="{{photos[2].src}}" alt="{{alt.bedroom}}"><span>{{t.filters.bedroom}}</span></a></div><div class="centered-action"><a class="btn btn-outline" href="/{{lang}}/gallery/">{{t.see_all}}</a></div></div></section>
 
-<section class="section region-section"><div class="container region-grid"><div class="region-side"><img loading="lazy" src="{{photos[1].src}}" data-fallback="{{photos[1].fallback}}" alt="{{alt.outside}}"><span class="region-label">Villa Batarelo · Lučane</span></div><div><span class="kicker">{{t.location_k}}</span><h2>{{t.location_t|safe}}</h2><p class="lead">{{t.location_p}}</p><a href="/{{lang}}/location/" class="text-link">{{t.learn}}</a></div></div></section>
+<section class="section region-section"><div class="container region-grid"><div class="region-side"><img loading="lazy" src="{{photos[1].src}}" data-fallback="{{photos[1].fallback}}" alt="{{alt.outside}}"><span class="region-label">Villa Batarelo · Lučane</span></div><div><span class="kicker">{{t.location_k}}</span><h2>{{t.location_t|safe}}</h2><p class="lead">{{t.location_p}}</p><a href="/{{lang}}/location/" class="text-link">{{t.location_action}}</a></div></div></section>
 {% elif page=='villa' %}
 {{subhero('villa',t.villa_k,t.villa_title,t.villa_lead,photos[0])|safe}}
 <section class="section"><div class="container editorial-grid"><div><span class="kicker">VILLA BATARELO</span><h2>{{t.villa_feature_title|safe}}</h2><p class="lead">{{t.villa_p1}}</p><p>{{t.villa_p2}}</p></div><figure class="editorial-photo"><img loading="lazy" src="{{photos[1].src}}" alt="{{alt.outside}}"></figure></div></section>
@@ -404,7 +534,7 @@ TEMPLATE=r'''<!doctype html>
 <section class="section"><div class="container contact-cards"><a href="tel:+385955846044" class="contact-card"><span class="kicker">{{t.call}}</span><strong>+385 95 584 6044</strong></a><a href="https://wa.me/385955846044" target="_blank" rel="noopener noreferrer" class="contact-card"><span class="kicker">WhatsApp</span><strong>{{t.wa}}</strong></a><a href="mailto:davorbatarelo1961@gmail.com" class="contact-card"><span class="kicker">{{t.footer_email}}</span><strong class="mail-contact">davorbatarelo1961@gmail.com</strong></a></div></section>
 <section class="section contact-faq"><div class="container faq-grid"><div><span class="kicker">{{t.questions}}</span><h2>{{t.faq_t}}</h2></div><div class="faq-list">{% for question,answer in t.faq %}<details><summary>{{question}}<span aria-hidden="true">+</span></summary><p>{{answer}}</p></details>{% endfor %}</div></div></section>
 {% else %}
-<section class="legal-top"><div class="container"><span class="kicker">VILLA BATARELO</span><h1>{{t[page+'_title']}}</h1><p>{{t.legal_notice}}</p></div></section><section class="section legal-content"><div class="container prose">{% for paragraph in t[page+'_body'] %}<p>{{paragraph}}</p>{% endfor %}<p><a href="mailto:davorbatarelo1961@gmail.com">davorbatarelo1961@gmail.com</a> · <a href="tel:+385955846044">+385 95 584 6044</a></p></div></section>
+<section class="legal-top"><div class="container"><span class="kicker">VILLA BATARELO</span><h1>{{t[page+'_title']}}</h1><p>{{t.legal_intros.get(page,t.legal_notice)}}</p></div></section><section class="section legal-content"><div class="container prose">{% for paragraph in t[page+'_body'] %}<p>{{paragraph}}</p>{% endfor %}<p><a href="mailto:davorbatarelo1961@gmail.com">davorbatarelo1961@gmail.com</a> · <a href="tel:+385955846044">+385 95 584 6044</a></p></div></section>
 {% endif %}
 {% if page in ['home','gallery','location'] %}<section class="booking-cta"><div class="container booking-cta-grid"><div><h2>{{t.booking_banner_t|safe}}</h2><p>{{t.booking_banner_p}}</p></div><a class="btn btn-light" href="/{{lang}}/booking/">{{t.cta}}</a></div></section>{% endif %}
 </main>

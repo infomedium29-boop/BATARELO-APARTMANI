@@ -45,3 +45,14 @@
 - U introu je potpuno uklonjen blur efekt, a pozadinska fotografija je dodatno prigušena jačim overlayem.
 
 - Intro: uklonjen sivi/tamni panel, obrub i sjena iza naziva na desktopu i mobitelu; naziv Villa Batarelo animira se izravno preko prigušene fotografije objekta.
+
+## 16.11.2026. — Jezična i sadržajna dorada
+- Zamijenjen gumb „Istražite vilu” prirodnijim „Pogledajte vilu” (EN: View the villa; DE: Villa ansehen).
+- Pregledani sadržaji svih 30 HR/EN/DE HTML stranica: naslovi, opisi, CTA poveznice, sadržaji, lokacija, upit, FAQ i pravne stranice.
+- Uklonjene generičke poruke i ponavljanje neodređenog „Saznajte više”; poveznice sada imenuju svoje odredište.
+- Ujednačeni prirodni opisi sobe, terase, bazena, lokalnih izleta i kontakta; nisu dodavani novi nepotvrđeni sadržaji objekta.
+- Pravni uvjeti nisu izmišljani ili proširivani; samo uvodne rečenice prilagođene svrsi stranice.
+- Zadržani su prethodni premium intro bez sive pozadine/obruba, Google karta, mobilni navigacijski raspored i popravak datuma.
+- Izvorni CSS, JavaScript i postojeći izvori fotografija ostali su nepromijenjeni.
+- Provjereni su interni URL-ovi, broj H1 po stranici, sve jezične verzije i JavaScript sintaksa.
+- Vizualno testiranje u pregledniku nije bilo moguće zbog blokade pokretanja lokalne stranice u testnom okruženju; provjeriti stvarni izgled nakon deploya.

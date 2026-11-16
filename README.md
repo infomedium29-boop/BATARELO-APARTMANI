@@ -84,3 +84,6 @@ Tipografski logotip **Villa Batarelo** nalazi se u navigaciji, footeru i uvodnoj
 Desktop intro ne zumira pozadinsku fotografiju i ne koristi `backdrop-filter`. Time je uklonjeno istodobno teško grafičko iscrtavanje; fotografija je i dalje vanjski URL kao na početnoj stranici.
 
 - U introu je potpuno uklonjen blur efekt, a pozadinska fotografija je dodatno prigušena jačim overlayem.
+
+### Jezična dorada (16.11.2026.)
+Tekstovi na hrvatskoj, engleskoj i njemačkoj verziji dodatno su uređeni kako bi bili konkretniji, prirodniji i bez generičkih marketinških izraza. Izmjene su unesene u `tools/build_site.py`, pa ostaju sačuvane pri ponovnom generiranju HTML datoteka.
