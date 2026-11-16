@@ -78,3 +78,7 @@ Tipografski logotip **Villa Batarelo** nalazi se u navigaciji, footeru i uvodnoj
 - Budući da se vanjska karta prikazuje odmah kada posjetitelj otvori stranicu lokacije, tekstovi privatnosti i kolačića usklađeni su s time; prije javne objave preporučena je dodatna GDPR provjera i potvrda vlasnika.
 
 - Intro sada koristi pozadinsku fotografiju stvarnog objekta uz zadržanu animaciju naziva.
+
+### Performanse intra na desktopu
+
+Desktop intro ne zumira pozadinsku fotografiju i ne koristi `backdrop-filter`. Time je uklonjeno istodobno teško grafičko iscrtavanje; fotografija je i dalje vanjski URL kao na početnoj stranici.

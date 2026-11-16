@@ -253,6 +253,30 @@
 }
 @media(prefers-reduced-motion:reduce){.intro::before{animation:none;transform:none}.intro-wordmark{clip-path:none;animation:none;opacity:1;transform:none;}}
 
+/* Medium29 — desktop intro performance pass.
+   Avoid animating a full-viewport photograph while applying backdrop-filter.
+   Keep the same photo, wordmark reveal and exit fade; only remove expensive
+   compositing effects on large screens. Mobile remains unchanged. */
+@media (min-width: 981px) {
+  .intro::before {
+    animation: none;
+    transform: none;
+  }
+  .intro-inner {
+    animation: none;
+    transform: none;
+    opacity: 1;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    background: rgba(14, 30, 24, .27);
+    box-shadow: none;
+  }
+  .intro-wordmark {
+    animation-duration: 1.18s;
+    animation-delay: .12s;
+  }
+}
+
 /* Medium29 / Villa Batarelo — Safari/iPhone date-field width fix.
    iOS date inputs have an intrinsic minimum width. Allow the grid cell and
    native date control to shrink to the same width as other form fields. */

@@ -34,3 +34,10 @@
 - Nisu mijenjani podaci, obrazac, dizajn ostalih polja, kalendar ili funkcionalnosti.
 
 - Intro sada koristi pozadinsku fotografiju stvarnog objekta uz zadržanu animaciju naziva.
+
+## Optimizacija desktop intro animacije
+
+- Na ekranima širim od 980 px pozadinska fotografija intra ostaje statična kako bi izbjegli skupo animiranje velikog sloja.
+- Uklonjeno dinamičko zamućenje (`backdrop-filter`) s desktop intra, uz zadržan suptilan proziran okvir.
+- Animacija naziva i završni prijelaz ostaju, uz kraće trajanje otkrivanja naziva.
+- Mobilni intro, uključujući njegov izgled i animaciju, nije mijenjan.
