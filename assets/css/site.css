@@ -225,3 +225,27 @@
 .intro-name{font-size:clamp(1.7rem,3.7vw,3rem);letter-spacing:.12em;font-weight:400}
 .intro-caption{letter-spacing:.16em;margin-top:13px}
 @media(max-width:700px){.intro-name{font-size:1.65rem;letter-spacing:.11em}.intro-mark{width:100px}}
+
+/* Medium29 — typographic identity, no house icon or location subtitle in the logo. */
+.brand {gap:0; align-items:center; min-width:0;}
+.brand .brand-wordmark {display:block; white-space:nowrap; line-height:1.05; font-family:var(--serif); font-size:clamp(1.1rem,1.38vw,1.35rem); letter-spacing:.025em; font-weight:400;}
+.brand .brand-wordmark strong {font-weight:650;}
+.brand-footer .brand-wordmark {font-size:clamp(1.4rem,1.85vw,1.9rem);}
+/* The intro displays ONLY the wordmark, revealed smoothly like a signature. */
+.intro-inner{overflow:visible;}
+.intro-wordmark {font-family:var(--serif);font-size:clamp(2rem,5vw,4.65rem);font-weight:400;letter-spacing:.015em;line-height:1.1;white-space:nowrap;color:var(--forest);clip-path:inset(0 100% 0 0);animation:vb-wordmark-reveal 1.42s cubic-bezier(.4,0,.12,1) .16s forwards;}
+.intro-wordmark strong {font-weight:650;}
+@keyframes vb-wordmark-reveal {to {clip-path:inset(0 0 0 0);}}
+@media(max-width:980px){
+  .nav-shell .brand{gap:0;}
+  .nav-shell .brand .brand-wordmark{font-size:19px;letter-spacing:.018em;}
+}
+@media(max-width:480px){
+  .nav-shell .brand .brand-wordmark{font-size:clamp(14px,4.1vw,18px);letter-spacing:.006em;}
+  .intro-wordmark{font-size:clamp(1.85rem,8vw,2.8rem);letter-spacing:0;}
+}
+@media(max-width:355px){
+  .nav-shell .brand .brand-wordmark{font-size:14px;letter-spacing:0;}
+  .nav-shell{column-gap:6px;}
+}
+@media(prefers-reduced-motion:reduce){.intro-wordmark{clip-path:none;animation:none;}}

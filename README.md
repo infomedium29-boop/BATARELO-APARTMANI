@@ -65,3 +65,7 @@ python3 tools/build_site.py
 Za stilove `assets/css/site.css`, za interakcije `assets/js/site.js`. Sve generirane HTML datoteke već su u ZIP-u.
 
 *Izradio Medium29, studeni 2026.*
+
+
+### Logo / vizualni identitet
+Tipografski logotip **Villa Batarelo** nalazi se u navigaciji, footeru i uvodnoj animaciji. Bez ikone kućice i bez lokacijskog podnaslova u logotipu. Favicon je tipografska varijanta s punim nazivom. Izvor je u `tools/build_site.py`; kod ponovnog generiranja zadržava se isti logotip.

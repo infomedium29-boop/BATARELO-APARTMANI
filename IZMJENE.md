@@ -14,3 +14,11 @@
 - Konačni podaci registriranog iznajmljivača te vlasnička potvrda pravnih tekstova.
 - Potvrda kapaciteta, kućnog reda, ocjena i uvjeta rezervacije.
 - Domena, opcionalna analitika / servis za e-mail upite prema dogovoru.
+
+## Logo bez kućice — 16.11.2026.
+- Uklonjen SVG simbol kućice iz navigacije i podnožja na svih 30 podstranica (HR, EN, DE).
+- Logo je samo tipografski naziv „Villa Batarelo”, bez lokacijskog potpisa.
+- Intro otkriva naziv elegantnom tekstualnom animacijom, bez simbola.
+- Favicon zamijenjen čistom tipografskom verzijom s nazivom.
+- Izmjene unesene i u generator `tools/build_site.py`, pa ostaju nakon ponovne izrade.
+- Ostale sekcije i funkcije nisu mijenjane.
