@@ -200,12 +200,12 @@ LANGS['hr'].update({
   'Kada nam se obratite putem WhatsAppa, e-maila ili obrasca za pripremu poruke, koristimo podatke koje nam pošaljete (ime, kontakt, željeni datumi i sadržaj upita) kako bismo odgovorili na vaš upit o smještaju.',
   'Obrazac na ovoj stranici ne sprema podatke na poslužitelj: nakon provjere podataka otvara WhatsApp ili vaš program za e-mail, gdje sami odlučujete hoćete li poslati poruku. Za obradu poruka putem tih usluga vrijede i njihova pravila privatnosti.',
   'Podatke iz zaprimljenog upita koristimo za komunikaciju u vezi s mogućim boravkom i ne prodajemo ih. Za informacije o pristupu, ispravku ili brisanju podataka javite se na kontakt naveden niže.',
-  'Opcionalna analitika nije aktivna dok se ne konfigurira i dok korisnik ne da odgovarajuću privolu. Vanjska Google karta učitava se tek na vaš izričit klik.'
+  'Opcionalna analitika nije aktivna dok se ne konfigurira i dok korisnik ne da odgovarajuću privolu. Na stranici lokacije prikazuje se ugrađena Google karta. Prilikom učitavanja te stranice Google može primiti tehničke podatke, poput IP adrese. Klikom na kartu otvara se Google Maps u novoj kartici.'
  ],
  'cookies_body':[
   'Stranica koristi nužnu pohranu u pregledniku za pamćenje izbora u banneru kolačića (localStorage) i za jednokratni prikaz uvodnog ekrana tijekom sesije (sessionStorage).',
   'Opcionalna Google Analytics analitika trenutačno nije konfigurirana. Ako se naknadno uključi, pokretat će se samo nakon prihvaćanja opcionalnih kolačića.',
-  'Google Maps karta ne učitava se automatski. Otvara se tek kada odaberete prikaz karte, pri čemu Google može obrađivati tehničke podatke prema svojim pravilima.',
+  'Na stranici lokacije odmah se prikazuje ugrađena Google karta. Pri učitavanju karte Google može obrađivati tehničke podatke prema vlastitim pravilima privatnosti. Klik na kartu otvara Google Maps u novoj kartici.',
   'Izbor možete promijeniti klikom na „Postavke kolačića” u podnožju stranice.'
  ],
  'terms_body':[
@@ -215,7 +215,7 @@ LANGS['hr'].update({
   'Uvjeti rezervacije putem Bookinga ili Airbnba određeni su pravilima i konkretnom ponudom prikazanom na odabranoj platformi.'
  ],
  'scroll_hint':'Više o vili','footer_explore':'Istražite','footer_contact':'Kontakt','footer_bookings':'Rezervacije','footer_email':'E-mail','lang_switch_label':'Odabir jezika','menu_label':'Otvori izbornik','filter_label':'Kategorije fotografija',
- 'map_load':'Prikaži Google kartu','map_notice':'Karta će se učitati s Google Maps servisa tek nakon vašeg klika.','place_action':'Prikaži na karti',
+ 'map_click_label':'Otvori lokaciju u Google Kartama','map_load':'Prikaži Google kartu','map_notice':'Karta će se učitati s Google Maps servisa tek nakon vašeg klika.','place_action':'Prikaži na karti',
  'photo_unavailable':'Fotografije trenutačno nisu dostupne. Pogledajte slike na Bookingu ili Airbnbu.','lightbox_title':'Pregled fotografije',
  'lightbox_close':'Zatvori fotografiju','lightbox_prev':'Prethodna fotografija','lightbox_next':'Sljedeća fotografija'
 })
@@ -256,12 +256,12 @@ LANGS['en'].update({
   'When you contact us by WhatsApp, email or the enquiry form, we use the details you choose to send (name, contact details, travel dates and your message) to reply to your accommodation enquiry.',
   'The form does not store your details on a web server. It prepares a message in WhatsApp or your email application; you decide whether to send it. Those services have their own privacy policies.',
   'Enquiry details are used to communicate about your potential stay and are not sold. Contact us using the details below to ask about access, correction or deletion of your personal data.',
-  'Optional analytics remains off unless configured and consented to. Google Maps is loaded only when you explicitly choose to display the map.'
+  'Optional analytics remains off unless configured and consented to. The location page displays an embedded Google map. When that page is opened, Google may receive technical data such as your IP address. Clicking the map opens Google Maps in a new tab.'
  ],
  'cookies_body':[
   'This website uses essential browser storage to remember your cookie-banner choice (localStorage) and to show the introduction animation only once per session (sessionStorage).',
   'Optional Google Analytics is not currently configured. If it is enabled later, it will run only after you accept optional cookies.',
-  'Google Maps is not loaded automatically. It loads after you select the map; Google may then process technical information under its own policies.',
+  'An embedded Google map is displayed directly on the location page. When it loads, Google may process technical information under its privacy policy. Clicking the map opens Google Maps in a new tab.',
   'You can revisit your choice using “Cookie settings” in the footer.'
  ],
  'terms_body':[
@@ -272,7 +272,7 @@ LANGS['en'].update({
  ],
  'scroll_hint':'Discover the villa','footer_explore':'Explore','footer_contact':'Contact','footer_bookings':'Bookings','footer_email':'Email',
  'lang_switch_label':'Choose language','menu_label':'Open menu','filter_label':'Photo categories',
- 'map_load':'Show Google map','map_notice':'The map will load from Google Maps only after you click.','place_action':'View on map',
+ 'map_click_label':'Open this location in Google Maps','map_load':'Show Google map','map_notice':'The map will load from Google Maps only after you click.','place_action':'View on map',
  'photo_unavailable':'Photos are temporarily unavailable. You can view the villa on Booking.com or Airbnb.','lightbox_title':'Photo viewer',
  'lightbox_close':'Close photo','lightbox_prev':'Previous photo','lightbox_next':'Next photo'
 })
@@ -313,12 +313,12 @@ LANGS['de'].update({
   'Wenn Sie uns über WhatsApp, E-Mail oder das Anfrageformular kontaktieren, verwenden wir die von Ihnen übermittelten Daten (Name, Kontaktdaten, Reisedaten und Nachricht), um Ihre Anfrage zu beantworten.',
   'Das Formular speichert Ihre Daten nicht auf einem Webserver. Es bereitet eine Nachricht in WhatsApp oder Ihrem E-Mail-Programm vor. Ob Sie diese Nachricht absenden, entscheiden Sie selbst. Für diese Dienste gelten auch deren Datenschutzbestimmungen.',
   'Die Angaben werden zur Kommunikation über einen möglichen Aufenthalt verwendet und nicht verkauft. Für Anfragen zu Auskunft, Berichtigung oder Löschung wenden Sie sich bitte an die unten angegebenen Kontaktdaten.',
-  'Optionale Analysen bleiben deaktiviert, bis sie eingerichtet wurden und eine entsprechende Einwilligung vorliegt. Google Maps wird erst nach Ihrer ausdrücklichen Auswahl geladen.'
+  'Optionale Analysen bleiben deaktiviert, bis sie eingerichtet wurden und eine entsprechende Einwilligung vorliegt. Auf der Standortseite wird eine eingebettete Google-Karte angezeigt. Beim Laden der Seite kann Google technische Daten wie Ihre IP-Adresse erhalten. Ein Klick auf die Karte öffnet Google Maps in einem neuen Tab.'
  ],
  'cookies_body':[
   'Diese Website verwendet notwendige Browserspeicherung, um Ihre Cookie-Einstellung (localStorage) zu speichern und die Intro-Animation nur einmal je Sitzung anzuzeigen (sessionStorage).',
   'Google Analytics ist derzeit nicht eingerichtet. Bei späterer Aktivierung wird es erst nach Zustimmung zu optionalen Cookies geladen.',
-  'Google Maps wird nicht automatisch geladen. Erst wenn Sie die Karte öffnen, werden Inhalte von Google nachgeladen. Google kann dabei technische Daten nach den eigenen Datenschutzbestimmungen verarbeiten.',
+  'Auf der Standortseite wird direkt eine eingebettete Google-Karte angezeigt. Beim Laden kann Google technische Daten gemäß den eigenen Datenschutzbestimmungen verarbeiten. Ein Klick auf die Karte öffnet Google Maps in einem neuen Tab.',
   'Sie können Ihre Auswahl jederzeit über „Cookie-Einstellungen” in der Fußzeile ändern.'
  ],
  'terms_body':[
@@ -329,7 +329,7 @@ LANGS['de'].update({
  ],
  'scroll_hint':'Villa entdecken','footer_explore':'Entdecken','footer_contact':'Kontakt','footer_bookings':'Buchung','footer_email':'E-Mail',
  'lang_switch_label':'Sprache auswählen','menu_label':'Menü öffnen','filter_label':'Fotokategorien',
- 'map_load':'Google-Karte anzeigen','map_notice':'Die Google-Karte wird erst nach einem Klick geladen.','place_action':'Auf Karte ansehen',
+ 'map_click_label':'Standort in Google Maps öffnen','map_load':'Google-Karte anzeigen','map_notice':'Die Google-Karte wird erst nach einem Klick geladen.','place_action':'Auf Karte ansehen',
  'photo_unavailable':'Fotos sind vorübergehend nicht verfügbar. Besuchen Sie unser Profil auf Booking.com oder Airbnb.','lightbox_title':'Fotoansicht',
  'lightbox_close':'Foto schließen','lightbox_prev':'Vorheriges Foto','lightbox_next':'Nächstes Foto'
 })
@@ -394,7 +394,7 @@ TEMPLATE=r'''<!doctype html>
 {% elif page=='location' %}
 {{subhero('location',t.location_page_k,t.location_page_t,t.location_lead,photos[0])|safe}}
 <section class="section"><div class="container"><div class="places-grid">{% for name,desc,query in t.places %}<article class="place-card"><h2>{{name}}</h2><p>{{desc}}</p><a href="https://www.google.com/maps/search/?api=1&amp;query={{query|urlencode}}" target="_blank" rel="noopener noreferrer" class="place-map-link">{{t.place_action}}</a></article>{% endfor %}</div></div></section>
-<section class="section map-section"><div class="container map-grid"><div><span class="kicker">LUČANE · SINJ</span><h2>{{t.map_title}}</h2><p>{{t.map_note}}</p><a target="_blank" rel="noopener noreferrer" class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&amp;query=Lu%C4%8Dane+33c+21230+Sinj+Croatia">{{t.map_button}}</a></div><div class="map-real" id="map-real"><div class="map-optin"><span class="map-optin-name">Villa Batarelo</span><p>Lučane 33c · 21230 Sinj</p><p class="map-optin-notice">{{t.map_notice}}</p><button type="button" class="btn btn-dark map-activate" data-map-load="true">{{t.map_load}}</button></div></div></div></section>
+<section class="section map-section"><div class="container map-grid"><div><span class="kicker">LUČANE · SINJ</span><h2>{{t.map_title}}</h2><p>{{t.map_note}}</p><a target="_blank" rel="noopener noreferrer" class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&amp;query=Villa%20Batarelo%2C%20Lu%C4%8Dane%2033c%2C%2021230%20Sinj%2C%20Croatia&amp;query_place_id=ChIJ_-4R9TirShMRwVZdgtVQnuM">{{t.map_button}}</a></div><div class="map-real" id="map-real"><iframe title="Villa Batarelo — Google Maps" src="https://maps.google.com/maps?q=Villa%20Batarelo%2C%20Lu%C4%8Dane%2033c%2C%2021230%20Sinj%2C%20Croatia&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" tabindex="-1" aria-hidden="true"></iframe><a class="map-open-overlay" href="https://www.google.com/maps/search/?api=1&amp;query=Villa%20Batarelo%2C%20Lu%C4%8Dane%2033c%2C%2021230%20Sinj%2C%20Croatia&amp;query_place_id=ChIJ_-4R9TirShMRwVZdgtVQnuM" target="_blank" rel="noopener noreferrer" aria-label="{{t.map_click_label}}"><span class="map-open-label">{{t.map_click_label}}</span></a></div></div></section>
 {% elif page=='booking' %}
 {{subhero('booking',t.booking_page_k,t.booking_page_t,t.booking_lead,photos[1])|safe}}
 <section class="section booking-section"><div class="container booking-grid"><div class="booking-info"><h2>{{t.booking_info_title}}</h2><div class="contact-short"><span>{{t.wa}} / {{t.call}}</span><a href="tel:+385955846044">+385 95 584 6044</a></div><div class="contact-short"><span>{{t.footer_email}}</span><a href="mailto:davorbatarelo1961@gmail.com">davorbatarelo1961@gmail.com</a></div><p class="muted-small">{{t.form_note}}</p></div><div class="booking-form-card">{{form(t)|safe}}</div></div></section>

@@ -61,16 +61,6 @@
   form.addEventListener('submit',e=>{e.preventDefault();if(!check())return;const url='https://wa.me/'+(conf.whatsapp||'385955846044')+'?text='+encodeURIComponent(message());const win=window.open(url,'_blank','noopener,noreferrer');if(!win)window.location.href=url;});
   emailLink?.addEventListener('click',e=>{e.preventDefault();if(!check())return;window.location.href=`mailto:${conf.email||'davorbatarelo1961@gmail.com'}?subject=${encodeURIComponent(copy.label)}&body=${encodeURIComponent(message())}`;});
  }
- // Real map loads only after an explicit action to limit third-party tracking before interaction.
- qsa('[data-map-load]').forEach(button=>button.addEventListener('click',()=>{
-   const wrap=button.closest('.map-real');if(!wrap)return;
-   const frame=doc.createElement('iframe');
-   frame.title='Villa Batarelo — Google Maps';
-   frame.loading='lazy';frame.referrerPolicy='strict-origin-when-cross-origin';
-   frame.setAttribute('allowfullscreen','');
-   frame.src='https://www.google.com/maps?q='+encodeURIComponent('Villa Batarelo, Lučane 33c, 21230 Sinj, Croatia')+'&output=embed';
-   wrap.replaceChildren(frame);
- }));
  // Consent; optional analytics remains disabled by default.
  const banner=qs('#cookie-banner'),consentKey='villa-batarelo-cookie-consent';
  let choice=null;try{choice=localStorage.getItem(consentKey)}catch{}

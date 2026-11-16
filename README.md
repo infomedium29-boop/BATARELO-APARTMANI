@@ -12,7 +12,7 @@ Kompletan višestranični statički web (30 HTML stranica: po 10 za hrvatski, en
 - Zamijenjeni su generički naslovi prirodnim opisima smještaja na HR, EN i DE; pojednostavljen sadržaj izleta, kontakta i smještaja.
 - Uklonjeni su duplicirani naslovi i izbjegnuta su stalna ponavljanja iste rezervacijske sekcije; ocjene su pomaknute bliže početku naslovnice.
 - Svi ranije uočeni engleski natpisi zamijenjeni su prijevodima ili uklonjeni.
-- Stvarna lokacija na karti: Google Maps iframe učitava se **isključivo nakon klika**. Alternativna poveznica otvara adresu u Google Kartama. Kartice za izlete imaju funkcionalne kartografske poveznice.
+- Stvarna lokacija na karti: Google Maps iframe vidljiv je odmah na podstranici lokacije, s oznakom objekta. Klik bilo gdje na kartu otvara zasebnu stranicu točne lokacije u Google Kartama (Google Place ID). Kartice za izlete imaju funkcionalne kartografske poveznice.
 - Galerija ne zamjenjuje neuspjelo učitane fotografije pogrešnim kadrovima iste vile: umjesto ponavljanja takve se pločice skrivaju, a ako nema vidljivih fotografija prikazuju se poveznice na oglase.
 - Prošireni su informativni tekstovi privatnosti, kolačića i pravila boravka, bez izmišljenih registracijskih podataka.
 - Zadržani su premium intro, odobrena mobilna navigacija, jezični izbornik, WhatsApp i telefon, galerijski filteri, pregled fotografija i forma za upit.
@@ -69,3 +69,10 @@ Za stilove `assets/css/site.css`, za interakcije `assets/js/site.js`. Sve generi
 
 ### Logo / vizualni identitet
 Tipografski logotip **Villa Batarelo** nalazi se u navigaciji, footeru i uvodnoj animaciji. Bez ikone kućice i bez lokacijskog podnaslova u logotipu. Favicon je tipografska varijanta s punim nazivom. Izvor je u `tools/build_site.py`; kod ponovnog generiranja zadržava se isti logotip.
+
+### Karta lokacije — ažuriranje 16.11.2026.
+- Uklonjen je zeleni okvir s gumbom „Prikaži Google kartu”.
+- Na sve tri podstranice lokacije ugrađena je stvarna Google karta Ville Batarelo (Lučane 33c).
+- Cijela karta klikabilna je i vodi u Google Maps na konkretni poslovni zapis (`query_place_id`).
+- Ako Google Maps sadržaj blokira preglednik ili mreža, ostaje zasebna funkcionalna poveznica za otvaranje lokacije.
+- Budući da se vanjska karta prikazuje odmah kada posjetitelj otvori stranicu lokacije, tekstovi privatnosti i kolačića usklađeni su s time; prije javne objave preporučena je dodatna GDPR provjera i potvrda vlasnika.

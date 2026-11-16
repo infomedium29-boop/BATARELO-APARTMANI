@@ -22,3 +22,8 @@
 - Favicon zamijenjen čistom tipografskom verzijom s nazivom.
 - Izmjene unesene i u generator `tools/build_site.py`, pa ostaju nakon ponovne izrade.
 - Ostale sekcije i funkcije nisu mijenjane.
+
+## Klikabilna stvarna karta — 16.11.2026.
+- Na lokaciji HR/EN/DE odmah je prikazana prava Google Maps karta s označenom lokacijom Ville Batarelo.
+- Klik na cijelu kartu vodi na Google Maps poslovni zapis Ville Batarelo.
+- Uklonjen tekstualni okvir s gumbom; usklađeni pravni nacrti i trajni HTML generator.
