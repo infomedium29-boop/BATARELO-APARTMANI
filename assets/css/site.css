@@ -233,7 +233,7 @@
 .brand .brand-wordmark strong {font-weight:650;}
 .brand-footer .brand-wordmark {font-size:clamp(1.4rem,1.85vw,1.9rem);}
 /* The intro now displays the wordmark over a real photo of the villa. */
-.intro-inner{position:relative;z-index:1;overflow:visible;padding:32px 38px;background:rgba(247,245,239,.10);border:1px solid rgba(255,255,255,.14);box-shadow:0 14px 40px rgba(7,19,14,.18);}
+.intro-inner{position:relative;z-index:1;overflow:visible;padding:0;background:transparent;border:0;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none;}
 .intro-wordmark {font-family:var(--serif);font-size:clamp(2rem,5vw,4.65rem);font-weight:400;letter-spacing:.015em;line-height:1.1;white-space:nowrap;color:#fff;clip-path:inset(0 100% 0 0);text-shadow:0 3px 12px rgba(0,0,0,.16);animation:vb-wordmark-reveal 1.42s cubic-bezier(.4,0,.12,1) .16s forwards;}
 .intro-wordmark strong {font-weight:650;}
 @keyframes vb-wordmark-reveal {0%{clip-path:inset(0 100% 0 0);opacity:0;transform:translateY(10px)}100%{clip-path:inset(0 0 0 0);opacity:1;transform:translateY(0)}}
@@ -244,7 +244,7 @@
 }
 @media(max-width:480px){
   .nav-shell .brand .brand-wordmark{font-size:clamp(14px,4.1vw,18px);letter-spacing:.006em;}
-  .intro-inner{padding:24px 22px;max-width:calc(100% - 30px)}
+  .intro-inner{padding:0;max-width:calc(100% - 30px)}
   .intro-wordmark{font-size:clamp(1.85rem,8vw,2.8rem);letter-spacing:0;}
 }
 @media(max-width:355px){
@@ -268,7 +268,7 @@
     opacity: 1;
     -webkit-backdrop-filter: none;
     backdrop-filter: none;
-    background: rgba(14, 30, 24, .27);
+    background: transparent;
     box-shadow: none;
   }
   .intro-wordmark {

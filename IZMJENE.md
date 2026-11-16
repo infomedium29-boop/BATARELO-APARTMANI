@@ -43,3 +43,5 @@
 - Mobilni intro, uključujući njegov izgled i animaciju, nije mijenjan.
 
 - U introu je potpuno uklonjen blur efekt, a pozadinska fotografija je dodatno prigušena jačim overlayem.
+
+- Intro: uklonjen sivi/tamni panel, obrub i sjena iza naziva na desktopu i mobitelu; naziv Villa Batarelo animira se izravno preko prigušene fotografije objekta.
