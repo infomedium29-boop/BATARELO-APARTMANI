@@ -27,3 +27,8 @@
 - Na lokaciji HR/EN/DE odmah je prikazana prava Google Maps karta s označenom lokacijom Ville Batarelo.
 - Klik na cijelu kartu vodi na Google Maps poslovni zapis Ville Batarelo.
 - Uklonjen tekstualni okvir s gumbom; usklađeni pravni nacrti i trajni HTML generator.
+
+## 16. 11. 2026. — Poravnanje datuma na mobitelima
+- Ispravljena iOS Safari širina polja za datum dolaska i odlaska na obrascu rezervacija.
+- Datumska polja sada koriste širinu istog stupca kao Broj gostiju i Ime i prezime.
+- Nisu mijenjani podaci, obrazac, dizajn ostalih polja, kalendar ili funkcionalnosti.

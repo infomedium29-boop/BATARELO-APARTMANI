@@ -248,3 +248,27 @@
   .nav-shell{column-gap:6px;}
 }
 @media(prefers-reduced-motion:reduce){.intro-wordmark{clip-path:none;animation:none;}}
+
+/* Medium29 / Villa Batarelo — Safari/iPhone date-field width fix.
+   iOS date inputs have an intrinsic minimum width. Allow the grid cell and
+   native date control to shrink to the same width as other form fields. */
+.booking-form-card,
+.booking-form-card form,
+.booking-form-card .form-grid,
+.booking-form-card .form-field { min-width: 0; max-width: 100%; }
+.booking-form-card .form-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.booking-form-card .form-field input[type="date"] {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.booking-form-card .form-field input[type="date"]::-webkit-date-and-time-value {
+  min-width: 0;
+  text-align: left;
+}
+@media (max-width: 700px) {
+  .booking-form-card .form-grid { grid-template-columns: minmax(0, 1fr); }
+  .booking-form-card .form-field input[type="date"] { font-size: 16px; }
+}
