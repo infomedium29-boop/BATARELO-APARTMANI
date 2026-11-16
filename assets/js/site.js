@@ -55,7 +55,30 @@
   const arrival=qs('#arrival'),departure=qs('#departure'),emailLink=qs('#email-form-link'),error=qs('#form-error');
   const today=new Date();const iso=new Date(today.getTime()-today.getTimezoneOffset()*60000).toISOString().slice(0,10);
   arrival.min=iso;departure.min=iso;
-  arrival.addEventListener('change',()=>{departure.min=arrival.value||iso;if(departure.value&&departure.value<=arrival.value)departure.value='';});
+  // Use the original native date picker, but present its value inside a
+  // fixed-size visual control so iPhone Safari cannot widen the form field.
+  const dateLocale={hr:'hr-HR',en:'en-GB',de:'de-DE'}[lang]||'hr-HR';
+  const updateDateDisplay=(input)=>{
+    const display=qs('#'+input.id+'-display');
+    if(!display)return;
+    if(input.value){
+      const [year,month,day]=input.value.split('-').map(Number);
+      display.textContent=new Date(year,month-1,day).toLocaleDateString(dateLocale,{day:'2-digit',month:'2-digit',year:'numeric'});
+      display.classList.remove('is-placeholder');
+    }else{
+      display.textContent={hr:'Odaberite datum',en:'Select date',de:'Datum auswählen'}[lang]||'Odaberite datum';
+      display.classList.add('is-placeholder');
+    }
+  };
+  [arrival,departure].forEach(input=>{
+    updateDateDisplay(input);
+    input.addEventListener('change',()=>updateDateDisplay(input));
+    input.addEventListener('input',()=>updateDateDisplay(input));
+  });
+  arrival.addEventListener('change',()=>{
+    departure.min=arrival.value||iso;
+    if(departure.value&&departure.value<=arrival.value){departure.value='';updateDateDisplay(departure);}
+  });
   const check=()=>{const a=arrival.value,b=departure.value;let valid=form.checkValidity()&&a>=iso&&b>a;if(!valid){error.hidden=false;form.reportValidity();}else error.hidden=true;return valid;};
   const message=()=>{const data=new FormData(form);const f=key=>String(data.get(key)||'').trim();return `${copy.label}\n\n${copy.arrival}: ${f('arrival')}\n${copy.departure}: ${f('departure')}\n${copy.guests}: ${f('guests')}\n${copy.name}: ${f('name')}\n${copy.email}: ${f('email')}\n${copy.phone}: ${f('phone')||'-'}\n${copy.message}: ${f('message')||'-'}\n\n${copy.privacy}: yes`;};
   form.addEventListener('submit',e=>{e.preventDefault();if(!check())return;const url='https://wa.me/'+(conf.whatsapp||'385955846044')+'?text='+encodeURIComponent(message());const win=window.open(url,'_blank','noopener,noreferrer');if(!win)window.location.href=url;});

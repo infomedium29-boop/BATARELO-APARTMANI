@@ -300,3 +300,84 @@
   .booking-form-card .form-grid { grid-template-columns: minmax(0, 1fr); }
   .booking-form-card .form-field input[type="date"] { font-size: 16px; }
 }
+
+
+/* Medium29 / Villa Batarelo: FINAL iOS Safari date-width fix.
+   Do not use the native WebKit date input box as the visible border. On iPhone,
+   its intrinsic rendered width can protrude outside its grid cell despite
+   width:100% / min-width:0. The fixed-width wrapper is the visible control;
+   the real native date input remains fully interactive over the top. */
+.booking-form-card .form-field .date-control {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  isolation: isolate;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  height: 52px;
+  min-height: 52px;
+  padding: 0 14px;
+  overflow: hidden;
+  background: #fafbf8;
+  border: 1px solid #d9ddd4;
+  border-radius: 0;
+  box-sizing: border-box;
+}
+.booking-form-card .date-control:focus-within {
+  border-color: #527158;
+  box-shadow: 0 0 0 2px #52715822;
+}
+.booking-form-card .date-control-value {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+  color: var(--ink);
+  font: inherit;
+  font-size: 16px;
+  line-height: 1.3;
+  pointer-events: none;
+}
+.booking-form-card .date-control-value.is-placeholder { color: #6c766b; }
+.booking-form-card .date-control-icon {
+  display: block;
+  flex: none;
+  opacity: .75;
+  pointer-events: none;
+}
+.booking-form-card .form-field .date-control input[type="date"] {
+  position: absolute !important;
+  inset: 0 !important;
+  display: block !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  opacity: 0 !important;
+  z-index: 2;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.booking-form-card .form-field .date-control input[type="date"]:focus-visible {
+  outline: none;
+}
+@media(max-width:700px) {
+  .booking-form-card .form-grid > .form-field {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+  .booking-form-card .form-field .date-control { width:100%; max-width:100%; }
+}

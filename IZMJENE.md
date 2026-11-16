@@ -56,3 +56,10 @@
 - Izvorni CSS, JavaScript i postojeći izvori fotografija ostali su nepromijenjeni.
 - Provjereni su interni URL-ovi, broj H1 po stranici, sve jezične verzije i JavaScript sintaksa.
 - Vizualno testiranje u pregledniku nije bilo moguće zbog blokade pokretanja lokalne stranice u testnom okruženju; provjeriti stvarni izgled nakon deploya.
+
+
+## 16.11.2026. – iPhone/Safari polja datuma (drugi, robusniji ispravak)
+- Polja dolaska i odlaska imaju isti točan vizualni okvir i širinu kao „Broj gostiju“ i „Ime i prezime“.
+- iPhone Safari više ne iscrtava native datumski okvir izvan forme: pravi `type=date` ostao je kao prozirni interaktivni sloj unutar točno dimenzioniranog okvira.
+- Izvorni kalendarski odabir i provjera datuma ostali su aktivni. Odabrani datum prikazuje se u skladu s HR/EN/DE jezikom.
+- Promjene se odnose isključivo na polja datuma, povezani JavaScript i stilove rezervacijskog obrasca.
