@@ -32,3 +32,5 @@
 - Ispravljena iOS Safari širina polja za datum dolaska i odlaska na obrascu rezervacija.
 - Datumska polja sada koriste širinu istog stupca kao Broj gostiju i Ime i prezime.
 - Nisu mijenjani podaci, obrazac, dizajn ostalih polja, kalendar ili funkcionalnosti.
+
+- Intro sada koristi pozadinsku fotografiju stvarnog objekta uz zadržanu animaciju naziva.

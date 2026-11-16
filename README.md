@@ -76,3 +76,5 @@ Tipografski logotip **Villa Batarelo** nalazi se u navigaciji, footeru i uvodnoj
 - Cijela karta klikabilna je i vodi u Google Maps na konkretni poslovni zapis (`query_place_id`).
 - Ako Google Maps sadržaj blokira preglednik ili mreža, ostaje zasebna funkcionalna poveznica za otvaranje lokacije.
 - Budući da se vanjska karta prikazuje odmah kada posjetitelj otvori stranicu lokacije, tekstovi privatnosti i kolačića usklađeni su s time; prije javne objave preporučena je dodatna GDPR provjera i potvrda vlasnika.
+
+- Intro sada koristi pozadinsku fotografiju stvarnog objekta uz zadržanu animaciju naziva.
