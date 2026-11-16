@@ -7,8 +7,14 @@
  de:{label:'Anfrage Villa Batarelo',arrival:'Anreise',departure:'Abreise',guests:'Gäste',name:'Name',email:'E-Mail',phone:'Telefon',message:'Nachricht',privacy:'Einwilligung für die Beantwortung',img:'Foto'}
  }[lang];
  const qs=(s,root=doc)=>root.querySelector(s), qsa=(s,root=doc)=>Array.from(root.querySelectorAll(s));
- // Reliable fallback: never display a broken image icon; use a verified photo of the same property.
- qsa('img[data-fallback]').forEach(img=>{img.addEventListener('error',()=>{const attempt=Number(img.dataset.fallbackAttempt||0);if(attempt===0&&img.dataset.fallback&&img.src!==img.dataset.fallback){img.dataset.fallbackAttempt='1';img.src=img.dataset.fallback;}else if(attempt<2){img.dataset.fallbackAttempt='2';img.src='/assets/img/photo-pending.svg';}});});
+ // Gallery tiles disappear if their remote images fail, instead of repeating an unrelated room or pool photo.
+ qsa('img[data-fallback]').forEach(img=>{img.addEventListener('error',()=>{
+  const tile=img.closest('.gallery-tile');
+  if(tile){tile.dataset.failed='true';tile.hidden=true;doc.dispatchEvent(new CustomEvent('villa-gallery-image-failed'));return;}
+  const attempt=Number(img.dataset.fallbackAttempt||0);
+  if(attempt===0&&img.dataset.fallback&&img.src!==img.dataset.fallback){img.dataset.fallbackAttempt='1';img.src=img.dataset.fallback;}
+  else if(attempt<2){img.dataset.fallbackAttempt='2';img.src='/assets/img/photo-pending.svg';}
+ });});
  // Header / menu.
  const header=qs('#site-header');let lastScroll=0;
  const updateHeader=()=>{if(header)header.classList.toggle('scrolled',window.scrollY>45);lastScroll=window.scrollY;};
@@ -30,13 +36,13 @@
  const gallery=qs('#photo-gallery'),dialog=qs('#lightbox');
  if(gallery&&dialog){let visible=[],index=0,xStart=0;
  const tiles=qsa('.gallery-tile',gallery),lightImg=qs('#lightbox-image'),cap=qs('#lightbox-caption');
- const resetVisible=()=>{visible=tiles.filter(t=>!t.hidden);};resetVisible();
+ const resetVisible=()=>{visible=tiles.filter(t=>!t.hidden && t.dataset.failed!=='true');const empty=qs('#gallery-empty');if(empty)empty.hidden=visible.length>0;};resetVisible();doc.addEventListener('villa-gallery-image-failed',resetVisible);
  qsa('.filter-btn').forEach(btn=>btn.addEventListener('click',()=>{
   const filter=btn.dataset.filter;qsa('.filter-btn').forEach(b=>{b.classList.toggle('is-active',b===btn);b.setAttribute('aria-pressed',String(b===btn));});
-  tiles.forEach(t=>{t.hidden=filter!=='all'&&t.dataset.category!==filter;});resetVisible();
+  tiles.forEach(t=>{t.hidden=t.dataset.failed==='true'||(filter!=='all'&&t.dataset.category!==filter);});resetVisible();
  }));
- const show=(i)=>{if(!visible.length)return;index=(i+visible.length)%visible.length;const source=qs('img',visible[index]);lightImg.src=source.currentSrc||source.src;lightImg.alt=source.alt;lightImg.dataset.fallback=source.dataset.fallback||'';cap.textContent=`${copy.img} ${index+1} / ${visible.length} · Villa Batarelo`;};
- const open=tile=>{resetVisible();show(visible.indexOf(tile));dialog.showModal();body.classList.add('modal-open');};
+ const show=(i)=>{if(!visible.length)return;index=(i+visible.length)%visible.length;const source=qs('img',visible[index]);lightImg.src=source.currentSrc||source.src;lightImg.alt=source.alt;lightImg.dataset.fallback='/assets/img/photo-pending.svg';cap.textContent=`${copy.img} ${index+1} / ${visible.length}`;};
+ const open=tile=>{resetVisible();if(visible.indexOf(tile)<0)return;show(visible.indexOf(tile));dialog.showModal();body.classList.add('modal-open');};
  tiles.forEach(tile=>tile.addEventListener('click',()=>open(tile)));
  qs('.lightbox-close')?.addEventListener('click',()=>dialog.close());qs('.lightbox-prev')?.addEventListener('click',()=>show(index-1));qs('.lightbox-next')?.addEventListener('click',()=>show(index+1));
  dialog.addEventListener('close',()=>{body.classList.remove('modal-open');lightImg.removeAttribute('src');});
@@ -55,6 +61,16 @@
   form.addEventListener('submit',e=>{e.preventDefault();if(!check())return;const url='https://wa.me/'+(conf.whatsapp||'385955846044')+'?text='+encodeURIComponent(message());const win=window.open(url,'_blank','noopener,noreferrer');if(!win)window.location.href=url;});
   emailLink?.addEventListener('click',e=>{e.preventDefault();if(!check())return;window.location.href=`mailto:${conf.email||'davorbatarelo1961@gmail.com'}?subject=${encodeURIComponent(copy.label)}&body=${encodeURIComponent(message())}`;});
  }
+ // Real map loads only after an explicit action to limit third-party tracking before interaction.
+ qsa('[data-map-load]').forEach(button=>button.addEventListener('click',()=>{
+   const wrap=button.closest('.map-real');if(!wrap)return;
+   const frame=doc.createElement('iframe');
+   frame.title='Villa Batarelo — Google Maps';
+   frame.loading='lazy';frame.referrerPolicy='strict-origin-when-cross-origin';
+   frame.setAttribute('allowfullscreen','');
+   frame.src='https://www.google.com/maps?q='+encodeURIComponent('Villa Batarelo, Lučane 33c, 21230 Sinj, Croatia')+'&output=embed';
+   wrap.replaceChildren(frame);
+ }));
  // Consent; optional analytics remains disabled by default.
  const banner=qs('#cookie-banner'),consentKey='villa-batarelo-cookie-consent';
  let choice=null;try{choice=localStorage.getItem(consentKey)}catch{}

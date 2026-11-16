@@ -1,5 +1,5 @@
 {
-  "important": "Photos referenced remotely, not bundled. Rights and owner originals must be confirmed before public release.",
+  "important": "Property gallery photographs are still remote, not bundled or converted. Remote URLs can fail; failed gallery tiles are hidden rather than replaced with unrelated photos. Owner approval and originals are required before public release.",
   "verified_originals": [
     "https://static.cupid.travel/hotels/566979439.jpg",
     "https://static.cupid.travel/hotels/507662904.jpg",
@@ -81,55 +81,55 @@
     },
     {
       "src": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/507662607.jpg?k=ae200dbb72dca433e4e56dea53b9b843f19fe72eefa526a165528d9423205a90&o=",
-      "fallback": "https://static.cupid.travel/hotels/507662904.jpg",
+      "fallback": "/assets/img/photo-pending.svg",
       "id": "507662607",
       "category": "inside"
     },
     {
       "src": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/507662778.jpg?k=405bdebae680ce0ea5c86a4ab322b5b00e2b11cd67c0f9f89cfa7b63b6429932&o=",
-      "fallback": "https://static.cupid.travel/hotels/507662904.jpg",
+      "fallback": "/assets/img/photo-pending.svg",
       "id": "507662778",
       "category": "inside"
     },
     {
       "src": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/507662697.jpg?k=8f16d07e9ace003b2625a5f12aa0be7b6db137c215191fd6228292ee9dd7050e&o=",
-      "fallback": "https://static.cupid.travel/hotels/507662904.jpg",
+      "fallback": "/assets/img/photo-pending.svg",
       "id": "507662697",
       "category": "inside"
     },
     {
       "src": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/507662738.jpg?k=23095f32de5891b7049a2a065e5612548d2150a5dfc197e597df5b504475b6e3&o=",
-      "fallback": "https://static.cupid.travel/hotels/507662904.jpg",
+      "fallback": "/assets/img/photo-pending.svg",
       "id": "507662738",
       "category": "inside"
     },
     {
       "src": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/507662770.jpg?k=1d82c363aa393096ecaadf5b990dd91d6632e1fbff12457af0d1745857dd8c76&o=",
-      "fallback": "https://static.cupid.travel/hotels/507662904.jpg",
+      "fallback": "/assets/img/photo-pending.svg",
       "id": "507662770",
       "category": "inside"
     },
     {
       "src": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/507662796.jpg?k=fba388ba399ad91b5af3660c82d3f3885c88abc8c8d49b147e7c7d0379e99c13&o=",
-      "fallback": "https://static.cupid.travel/hotels/507662904.jpg",
+      "fallback": "/assets/img/photo-pending.svg",
       "id": "507662796",
       "category": "inside"
     },
     {
       "src": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/507662774.jpg?k=b7745eca4583a00685ce7c52dfbe4aa72170f5b8245fdd88f7fb91481e9b71f9&o=",
-      "fallback": "https://static.cupid.travel/hotels/507662904.jpg",
+      "fallback": "/assets/img/photo-pending.svg",
       "id": "507662774",
       "category": "inside"
     },
     {
       "src": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/507662862.jpg?k=60d15d736c81f69b5d9ef4e758423f74a0007b95a1855a2dcd89dcc213cbb365&o=",
-      "fallback": "https://static.cupid.travel/hotels/507662904.jpg",
+      "fallback": "/assets/img/photo-pending.svg",
       "id": "507662862",
       "category": "inside"
     },
     {
       "src": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/566977587.jpg?k=fe457fbd9ed2c9b4a213137852e2d67b4d5baee6973b658901b44b3faa165829&o=",
-      "fallback": "https://static.cupid.travel/hotels/507662904.jpg",
+      "fallback": "/assets/img/photo-pending.svg",
       "id": "566977587",
       "category": "inside"
     },
@@ -165,7 +165,7 @@
     },
     {
       "src": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/507662727.jpg?k=c216e6574af1f31762be67677dc88ba76d57910db2ff3499e25deac8ad3bf726&o=",
-      "fallback": "https://static.cupid.travel/hotels/507662909.jpg",
+      "fallback": "/assets/img/photo-pending.svg",
       "id": "507662727",
       "category": "bathroom"
     },
@@ -183,7 +183,7 @@
     },
     {
       "src": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/507662668.jpg?k=a539be0a4b88732234f45f4fb9d49f12515ea4c6d80958c113e9955a43efd94e&o=",
-      "fallback": "https://static.cupid.travel/hotels/507662904.jpg",
+      "fallback": "/assets/img/photo-pending.svg",
       "id": "507662668",
       "category": "inside"
     },
