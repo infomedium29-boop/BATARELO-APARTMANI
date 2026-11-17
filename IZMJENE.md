@@ -63,3 +63,5 @@
 - iPhone Safari više ne iscrtava native datumski okvir izvan forme: pravi `type=date` ostao je kao prozirni interaktivni sloj unutar točno dimenzioniranog okvira.
 - Izvorni kalendarski odabir i provjera datuma ostali su aktivni. Odabrani datum prikazuje se u skladu s HR/EN/DE jezikom.
 - Promjene se odnose isključivo na polja datuma, povezani JavaScript i stilove rezervacijskog obrasca.
+
+- Naslov „Telefon i e-mail” na stranici rezervacija prilagođen je mobilnim i tablet zaslonima tako da ne prelazi u drugi red; izmjena vrijedi i za EN/DE.
